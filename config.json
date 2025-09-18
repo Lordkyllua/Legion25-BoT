@@ -1,1 +1,8 @@
-{"welcomeChannel": null,"rolesChannel": null,"gamesChannel": null}
+{
+  "channels": {
+    "welcome": null,
+    "roles": null,
+    "games": null
+  },
+  "roles": []
+}
