@@ -36,3 +36,21 @@ for (const file of eventFiles) {
 }
 
 client.login(process.env.DISCORD_TOKEN);
+
+// ========== Graceful Shutdown ==========
+const shutdown = async (signal) => {
+  console.log(`\n⚠️ Received ${signal}. Shutting down gracefully...`);
+
+  try {
+    await client.destroy();
+    console.log("✅ Bot disconnected from Discord.");
+    process.exit(0);
+  } catch (error) {
+    console.error("❌ Error during shutdown:", error);
+    process.exit(1);
+  }
+};
+
+// Capturar señales de Railway/Heroku/Docker
+process.on("SIGINT", () => shutdown("SIGINT"));   // Ctrl+C
+process.on("SIGTERM", () => shutdown("SIGTERM")); // Railway / Heroku
