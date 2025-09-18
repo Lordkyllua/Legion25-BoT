@@ -27,15 +27,7 @@ Los administradores seleccionan qué roles estarán disponibles para los miembro
 
 📢 **!setchannel** *(solo administradores)*  
 Configura un canal donde el bot enviará mensajes importantes, como el ranking o anuncios.
-
----
-
-👑 **Notas importantes**  
-- Solo los administradores pueden usar **!roleadmin** y **!setchannel**.  
-- Los roles configurados con **!roleadmin** estarán disponibles para todos los miembros con **!roles**.  
-- Cada acción en los juegos (dado/ppt) suma puntos para el ranking.  
-
-💡 **Consejo:** ¡Usa los roles para organizar clanes o equipos dentro del juego *Tiny Survivors*!  
+  
     `;
 
     await message.channel.send(helpMessage);
