@@ -2,7 +2,7 @@ const db = require("../utils/database");
 
 module.exports = {
   name: "roleadmin",
-  description: "Set allowed roles for selection",
+  description: "Configure allowed roles",
   execute(message, args) {
     if (!message.member.permissions.has("Administrator")) {
       return message.reply("❌ You need to be an admin to use this command.");
