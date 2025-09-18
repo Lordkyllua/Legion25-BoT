@@ -1,8 +1,6 @@
 {
-  "channels": {
-    "welcome": null,
-    "roles": null,
-    "games": null
-  },
-  "roles": []
+  "prefix": "!",
+  "welcomeChannel": "welcome",
+  "rolesChannel": "roles",
+  "gamesChannel": "games"
 }
