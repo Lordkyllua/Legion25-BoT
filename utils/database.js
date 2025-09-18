@@ -16,7 +16,7 @@ module.exports = {
       .slice(0, 10);
   },
   setAllowedRoles(guildId, roles) {
-    allowedRoles[guildId] = roles;
+    allowedRoles[guildId] = roles; // ahora son IDs
   },
   getAllowedRoles(guildId) {
     return allowedRoles[guildId] || [];
