@@ -1,6 +1,7 @@
 const { Client, GatewayIntentBits, Partials, Collection } = require("discord.js");
 const fs = require("fs");
 const path = require("path");
+
 const config = require("./config.json");
 
 const client = new Client({
@@ -17,14 +18,14 @@ const client = new Client({
 client.commands = new Collection();
 client.config = config;
 
-// Cargar comandos
+// Load commands
 const commandFiles = fs.readdirSync(path.join(__dirname, "commands")).filter(file => file.endsWith(".js"));
 for (const file of commandFiles) {
   const command = require(`./commands/${file}`);
   client.commands.set(command.name, command);
 }
 
-// Cargar eventos
+// Load events
 const eventFiles = fs.readdirSync(path.join(__dirname, "events")).filter(file => file.endsWith(".js"));
 for (const file of eventFiles) {
   const event = require(`./events/${file}`);
@@ -42,4 +43,5 @@ process.on("SIGINT", () => {
   process.exit(0);
 });
 
+// Login with Railway environment variable
 client.login(process.env.DISCORD_TOKEN);
