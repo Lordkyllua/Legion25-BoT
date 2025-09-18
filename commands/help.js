@@ -9,7 +9,9 @@ module.exports = {
       ✊ **!ppt [rock/paper/scissors]** - Play Rock Paper Scissors
       ⭐ **!ranking** - Show the top active members
       🏅 **!points** - Show your points
-      🎭 **!roleadmin** - Configure selectable roles (Admin only)
+      🎭 **!roles** - Show available roles
+      🛠 **!roleadmin [Role1 Role2...]** - Configure allowed roles (Admin only)
+      ⚙️ **!setchannel [welcome/roles/games] #channel** - Set channels (Admin only)
       `
     );
   }
