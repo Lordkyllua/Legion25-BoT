@@ -6,28 +6,27 @@ module.exports = {
 **📖 Available Commands**
 
 ⚙️ **!help**  
-Muestra este mensaje de ayuda con la lista de comandos disponibles.
+Shows this help message with the list of available commands.
 
 🏆 **!ranking**  
-Muestra el top 10 de jugadores con más puntos en el servidor.
+Displays the top 10 players with the most points.
 
 🎲 **!dado**  
-Lanza un dado y te da un número aleatorio del 1 al 6. ¡El resultado suma puntos!
+Rolls a dice and gives you a random number between 1 and 6.
 
 ✂️ **!ppt**  
-Juega Piedra, Papel o Tijera contra el bot.
+Play Rock, Paper, Scissors against the bot.
 
 🎭 **!roles**  
-Muestra un menú con los roles disponibles configurados por un administrador.  
-Puedes elegir uno para que el bot te lo asigne automáticamente.
+Displays a menu with the roles available.  
+You can pick one and the bot will assign it to you.
 
-🛠 **!roleadmin** *(solo administradores)*  
-Muestra un menú con todos los roles existentes en el servidor.  
-Los administradores seleccionan qué roles estarán disponibles para los miembros en **!roles**.
+🛠 **!roleadmin** *(admin only)*  
+Displays a menu with all existing roles in the server.  
+Admins select which roles will be available to members in **!roles**.
 
-📢 **!setchannel** *(solo administradores)*  
-Configura un canal donde el bot enviará mensajes importantes, como el ranking o anuncios.
-  
+📢 **!setchannel** *(admin only)*  
+Configures a channel where the bot will send important messages such as rankings or announcements.
     `;
 
     await message.channel.send(helpMessage);
