@@ -12,7 +12,7 @@ function rotateStatus(client) {
       status: "online"
     });
     i = (i + 1) % statuses.length;
-  }, 60000); // cada minuto
+  }, 60000);
 }
 
 module.exports = { rotateStatus };
